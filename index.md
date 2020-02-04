@@ -10,4 +10,4 @@ Agriculture is the main source of livelihood for the majority of Bhutan's popula
 ### How?
 We use GIS tools to conduct risk analyses for locations across space and time, based on factors such as relief and land use. 
 ### Contact
-Shoot us an email at <dukesofhazardllc@gmail.com>.
+Shoot us an email at <dukesofhazardsllc@gmail.com>.
