@@ -9,3 +9,5 @@ Bhutan's location in the Himalayas makes it a veritable hotbed of rainy, high-re
 Agriculture is the main source of livelihood for the majority of Bhutan's population. Landslides destroy terraces and structures used for farming, and the rainfall that feeds 40% of Bhutan's farms exacerbates landslide risk. 
 ### How?
 We use GIS tools to conduct risk analyses for locations across space and time, based on factors such as relief and land use. 
+### Contact
+Shoot us an email at <dukesofhazardllc@gmail.com>.
