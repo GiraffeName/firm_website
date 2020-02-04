@@ -1,7 +1,7 @@
 # The Dukes of Hazards
 ## Colleen Scott, Jeremy Elkayam
 ## Mission Statement
-We make the world better, yo
+To protect the lands and rivers by uniting geospatial technology with environmental dedication.
 ## Landslide Susceptibility in Bhutan
 ### Why?
 Bhutan's location in the Himalayas makes it a veritable hotbed of rainy, high-relief landscapes and therefore at risk for landslides. Over 40% of Bhutan's land is protected by its government for environmental conservation, and natural disaster preparation is an integral part of conservation efforts. Landslides also impact Bhutan's drainage network, filling runoff water with sediment which passes into the more low-lying southern parts of the country.
