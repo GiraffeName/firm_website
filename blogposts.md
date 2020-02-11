@@ -9,6 +9,7 @@ Landslides are a combined problem of Newtonian physics and material properties. 
 We are calculating landslide risk according to a model put forth by [Iverson et al. 2000](https://doi.org/10.1029/2000WR900090).
 This model states the following: 
 #### Stress Factors = Resistance Factors / Driving Factors
+or
 #### Stress Factors = (tan φ) / (tan θ) + [C - ψt * γw * (tan φ)] / [γr * H * (sin θ) * (cos θ)]
 Basically, the resistance factor is the soil's resistance to shear and the driving factor is the forces that will cause the soil to shear. Let's break that down a bit.
 
@@ -20,3 +21,4 @@ Basically, the resistance factor is the soil's resistance to shear and the drivi
 - γr is unit weight of soil regolith (N/m^3), which can be determined by finding the soil bulk density in kg/m^3 and multiplying by the acceleration due to gravity to find the weight.
 - H is soil regolith thickness (m), which can be found by the depth to bedrock.
 
+With the right data sets and unit conversions, we'll be well on our way.
