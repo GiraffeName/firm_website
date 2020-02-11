@@ -5,9 +5,9 @@ navigation_weight: 2
 ---
 # Blog Updates
 ## Update 2/10/20
-We are calculating landslide risk according to a model put forth by Iverson et al. 2000.
+We are calculating landslide risk according to a model put forth by [Iverson et al. 2000](https://doi.org/10.1029/2000WR900090).
 This model states the following: 
-#### Stress Factor = Resistance Factor / Driving Factor = (tan φ) / (tan θ) + [C - ψt * γw * (tan φ)] / [γr * H * (sin θ) * (cos θ)]
+#### Stress Factors = Resistance Factors / Driving Factors = (tan φ) / (tan θ) + [C - ψt * γw * (tan φ)] / [γr * H * (sin θ) * (cos θ)]
 Basically, the resistance factor is the soil's resistance to shear and the driving factor is the forces that will cause the soil to shear. Let's break that down a bit.
 
 - φ is internal angle of friction in degrees. This is determined by laboratory testing of different soil types and consistencies, and tells at at what angle the soil will shear.
