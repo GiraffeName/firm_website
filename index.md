@@ -1,3 +1,9 @@
+---
+layout: default
+title: Home
+navigation_weight: 1
+---
+
 # The Dukes of Hazards
 ## Colleen Scott, Jeremy Elkayam
 ## Mission Statement
