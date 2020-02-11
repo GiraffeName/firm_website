@@ -5,6 +5,7 @@ navigation_weight: 2
 ---
 # Blog Updates
 ## Update 2/10/20
+Landslides are a combined problem of Newtonian physics and material properties. Different soils behave in predictable manners according to their textures, moisture content, and internal stresses. Knowing how soils behave under certain conditions will allow us to predict the risk of landslides for an area given data about that area. 
 We are calculating landslide risk according to a model put forth by [Iverson et al. 2000](https://doi.org/10.1029/2000WR900090).
 This model states the following: 
 #### Stress Factors = Resistance Factors / Driving Factors
