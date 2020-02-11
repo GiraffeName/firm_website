@@ -8,6 +8,10 @@ navigation_weight: 1
 ## Colleen Scott, Jeremy Elkayam
 ## Mission Statement
 To protect the lands and rivers by uniting geospatial technology with environmental dedication.
+
+## Blog
+[Check out our blog here!](https://giraffename.github.io/blogposts)
+
 ## Landslide Susceptibility in Bhutan
 ### Why?
 Bhutan's location in the Himalayas makes it a veritable hotbed of rainy, high-relief landscapes and therefore at risk for landslides. Over 40% of Bhutan's land is protected by its government for environmental conservation, and natural disaster preparation is an integral part of conservation efforts. Landslides also impact Bhutan's drainage network, filling runoff water with sediment which passes into the more low-lying southern parts of the country. This impacts agricultural productivity as well as waterway health, since 98% of Bhutan's irrigated water for agriculture comes from stream diversion.
