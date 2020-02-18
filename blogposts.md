@@ -21,6 +21,28 @@ Also, some states report landslides as polygons containing the affected area, wh
 Finally, not all landslides are the same-- some are of much greater magnitude than others-- but they were all treated equally in our study. Further research could lead to some method of weighting the various landslide occurrences so that larger landslides count for more than smaller ones.
 
 
+
+### Python
+Python is a versatile and flexible programming language that is relatively easy to learn and can be used in conjunction with ArcGIS and QGIS. In this class, we will be using it for geoprocessing operations.
+
+The basic concepts of a programming language are pretty simple! A program is a set of instructions that a computer will carry out. Due to the nature of Newtonian physics, a computer will always follow the instructions in the same way every time, meaning the results you get are always going to be deterministic. You'll only get something different out if you put something different in. 
+
+Python's instructions are easy to understand. `a=0` finds a space in the computer's memory, calls it `a`, remembers where to find it, and sets the memory's value to 0 at that location. In fewer words, it creates a variable named `a` and sets it to 0. But, each Python instruction is translated into language that is easier for machines to read-- sequences of zeroes and ones that the computer understands mean to move things between the RAM and different parts of the CPU. But that's really quite hard to understand, so Python wraps those instructions into a more human-readable format, known as a high-level programming language.
+
+Just like how Python's commands are a bunch of computer-level commands wrapped up nicely in human-readable format, we can save important sets of instructions and repeat them without having to write every instruction out over and over again. The keyword `def` allows for creation of a function. A function is a set of instructions for Python to run. Functions can have inputs and outputs, but they don't necessarily need to. Here is an example of a function without inputs or outputs.
+```
+def a():
+  print ("hello world!")
+```
+In this case, `a()` is just a shorter way to say `print("hello world!")`. We can also have functions that take inputs.
+```
+def b(number):
+  print (number + 5)
+```
+This prints whatever number is between the parentheses, plus 5. For example, `b(5)` prints 10.
+
+Python gives users the option of object-oriented programming, which is useful in creating a program with many different components that have their own attributes and can do things on their own inherent to themselves. Object-oriented programming is vital for GIS applications and will be covered in a future blog post.
+
 ## Update 2/10/20
 Landslides are a combined problem of Newtonian physics and material properties. Different soils behave in predictable manners according to their textures, moisture content, and internal stresses. Knowing how soils behave under certain conditions will allow us to predict the risk of landslides for an area given data about that area. 
 We are calculating landslide risk according to a model put forth by [Iverson et al. 2000](https://doi.org/10.1029/2000WR900090).
