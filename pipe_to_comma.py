@@ -4,16 +4,11 @@ def make_this_crap_a_list(filename):
     full_text = file.read()
     file.close()
     full_text = full_text.split("\n")
-    #horizon_dict = {}
     for z in range(len(full_text)):
         full_text[z] = full_text[z].split('|')
         for g in range(len(full_text[z])):
             full_text[z][g] = full_text[z][g].strip('"')
-    #if len(full_text[z]) == 4: 
-    #    horizon_dict[full_text[z][3]] = full_text[0:3]
     return full_text
-#print(len(full_text))
-#print(len(horizon_dict))
 
 def arr_csv(arr,filename="out.csv"):
     file = open(filename,'w')
@@ -33,10 +28,12 @@ def pipe_delimited_to_csv(filename):
 
 
 if __name__ == "__main__":
-    #print(sys.argv)
-    #try:
+    try:
         filename = sys.argv[1]
         filename = filename.split(".")
         filename = filename[0]
         pipe_delimited_to_csv(filename)
         print("CSV created with name " + filename + ".csv")
+    except:
+        print("Usage: run this program with the filename for the pipe-delimited file you want, e.g. \"python pipe_to_comma.py chorizon.txt\"")
+
