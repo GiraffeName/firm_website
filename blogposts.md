@@ -5,6 +5,34 @@ navigation_weight: 2
 ---
 # Blog Updates
 
+| Description                                                                                                                | USCS symbol              | chorizon                      | Unsaturated | Saturated | Compacted | Saturated Compacted |
+|----------------------------------------------------------------------------------------------------------------------------|--------------------------|-------------------------------|-------------|-----------|-----------|---------------------|
+| Well graded   gravel, sandy gravel, with little or no fines                                                                | GW                       | sieveno4_r                    | 0           |           |           |                     |
+| Poorly graded   gravel, sandy gravel, with little or no fines                                                              | GP                       | sieveno10_r                   | 0           |           |           |                     |
+| Silty   gravels, silty sandy gravels                                                                                       | GM                       | sieveno40_r                   | 0           |           |           |                     |
+| Clayey   gravels, clayey sandy gravels                                                                                     | GC                       | sieveno200_r                  | 20          |           |           |                     |
+| Well graded   sands, gravelly sands, with little or no fines                                                               | SW                       | sandvc_r                      | 0           |           |           |                     |
+| Poorly graded   sands, gravelly sands, with little or no fines                                                             | SP                       | sandco_r                      | 0           |           |           |                     |
+| Silty sands                                                                                                                | SM                       | sandmed_r                     | 22          |           | 20        | 50                  |
+| Loamy sand,   sandy clay Loam                                                                                              | SM-SC                    | sandfine_r                    | 7\*          | 10-20\*    | 50-75     | 14                  |
+| Clayey sands                                                                                                               | SC                       | sandvf_r                      | 5           |           | 74        | 11                  |
+| Inorganic   silts, silty or clayey fine sands, with slight plasticity                                                      | ML                       | siltco_r                      | 7           |           | 67        | 9                   |
+| Inorganic   clays, silty clays, sandy clays of low plasticity                                                              | CL                       | claytotal_r                   | 4           |           | 86        | 13                  |
+| Mixture if   inorganic silt and clay, moderately plastic                                                                   | ML-CL                    | avg of siltco and   claytotal | 6\*          | 10-20\*    | 65        | 22                  |
+| Organic silts   and organic silty clays of low plasticity                                                                  | OL                       | om_r fraction of silt         | 5           |           |           |                     |
+| Inorganic   silts of high plasticity                                                                                       | MH                       | siltfine_r                    | 20          |           | 10        | 72                  |
+| Inorganic   clays of high plasticity                                                                                       | CH                       | claysizedcarb_r               | 25          |           | 103       | 11                  |
+| Organic clays   of high plasticity                                                                                         | OH                       | om_r fraction of clay         | 10          |           |           |                     |
+| Loam\*\*                                                                                                                     | ML, OL, MH, OH           |                               | 5-20\*       | 20-Oct    | 60-90     |                     |
+| Silt Loam\*\*                                                                                                                | ML, OL, MH, OH           |                               | 5-20\*       | 20-Oct    | 60-90     |                     |
+| Clay Loam,   Silty Clay Loam\*\*                                                                                             | ML, OL, CL, MH, OH,   CH |                               | 4-25\*       | 20-Oct    | 60-105    |                     |
+| Silty clay,   clay                                                                                                         | OL, CL, OH, CH           |                               | 4-25\*       | 20-Oct    | 90-105    |                     |
+| Peat and   other highly organic soils                                                                                      | Pt                       | om_r                          |             |           |           |                     |
+|                                                                                                                            |                          |                               |             |           |           |                     |
+| NOTES:                                                                                                                     |                          |                               |             |           |           |                     |
+| \* Hyphenated   classifications are "borderline" and incorporate plasticity aspects   of both types depending on percentage |                          |                               |             |           |           |                     |
+| \*\* Loam is not classified in SSURGO metadata                                                                               |                          |                               |             |           |           |                     |
+
 ## Update 2/17/20
 
 ### Landslide Density
