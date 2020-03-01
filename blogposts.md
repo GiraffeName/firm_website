@@ -64,7 +64,7 @@ One thing to consider when putting these values to use is that in landslide cond
 
 In the actual data, we also see a significant number of hybridized classifications. Since the geotechnical soil database only has two instances of hybridization, it is difficult to discern an overall trend to fill in the blanks for saturated, compacted, and saturated compacted values. For instance, the SM-SC classification appears to line up better with SC than it does SM. However, saturated and saturated compacted values for ML-CL fall outside the range of both: lower than ML when compacted but higher than SL when saturated compacted.
 
-One possible source to correct this may be this graph from the [Federal Highway Administration Research and Technology](https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/15033/001.cfm) division of the U.S. Department of Transportation.
+One possible source to correct this may be this graph from the [Federal Highway Administration Research and Technology](https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/15033/001.cfm) division of the U.S. Department of Transportation. 
 ![graph](https://github.com/GiraffeName/giraffename.github.io/blob/master/soilerosionrates.png)
 
 In short, there are too many missing spaces in this table for us to determine with a high precision what the value for cohesion will be in our model. Our results will largely depend on the type of soil in our area of interest, and how accurately we determine our potential error.
@@ -110,18 +110,17 @@ Python gives users the option of object-oriented programming, which is useful in
 ## Update 2/10/20
 Landslides are a combined problem of Newtonian physics and material properties. Different soils behave in predictable manners according to their textures, moisture content, and internal stresses. Knowing how soils behave under certain conditions will allow us to predict the risk of landslides for an area given data about that area. 
 We are calculating landslide risk according to a model put forth by [Iverson et al. 2000](https://doi.org/10.1029/2000WR900090).
+
 This model states the following: 
 #### Stress Factors = Resistance Factors / Driving Factors
 or
-#### Stress Factors = (tan φ) / (tan θ) + [C - ψt * γw * (tan φ)] / [γr * H * (sin θ) * (cos θ)]
+#### Stress Factors = (tan φ) / (tan θ) + \[C - ψt * γw * (tan φ)] / \[γr * H * (sin θ) * (cos θ)]
 Basically, the resistance factor is the soil's resistance to shear and the driving factor is the forces that will cause the soil to shear. Let's break that down a bit.
 
 - φ is internal angle of friction in degrees. This is determined by laboratory testing of different soil types and consistencies, and tells at at what angle the soil will shear. [This site](http://www.geotechdata.info/parameter/cohesion.html) is an example of these tested values.
 - θ is hillslope in degrees. Hillslope determines the amount of shear stress and resisting forces, and we can get the data from a digital elevation model (DEM) that has been processed to calculate slope or relief.
 - C is soil cohesion (Pa = kg/m/s^2) which varies depending on the type of soil. For example, silty or clayey soils are more cohesive than gravelly soils.
 - ψt is pressure head (m); h/cosθ which is the height of the water table.
-- γw is unit weight of water (N/m^3); N=kg*m/s^2 which is a constant for our purposes.
+- γw is unit weight of water (N/m^3); N=kg\*m/s^2 which is a constant for our purposes.
 - γr is unit weight of soil regolith (N/m^3), which can be determined by finding the soil bulk density in kg/m^3 and multiplying by the acceleration due to gravity to find the weight.
 - H is soil regolith thickness (m), which can be found by the depth to bedrock.
-
-With the right data sets and unit conversions, we'll be well on our way.
