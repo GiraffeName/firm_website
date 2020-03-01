@@ -4,7 +4,11 @@ title: Blog
 navigation_weight: 2
 ---
 # Blog Updates
-Of our values from the Iverson model, soil cohesion is one of the most variable and difficult to quantify with GIS data. Soil mechanics and kinematics have been extensively studied by geologists and engineers, and these behaviors vary depending on the compaction or saturation of the sediment. To understand these dynamics, it is important to first define the soil type in terms of texture and grain size. The [Unified Soil Classification System](https://en.wikipedia.org/wiki/Unified_Soil_Classification_System) (USCS) does this using a two-letter system.
+
+##Update 3/1/20
+
+###Soil Cohesion
+Of our values from the Iverson model, soil cohesion is one of the most unpredictable and difficult to quantify with GIS because it depends on ground-truth data and variable environmental conditions. Soil mechanics and kinematics have been extensively studied by geologists and engineers, and these behaviors vary depending on the compaction or saturation of the sediment. To understand these dynamics, it is important to first define the soil type in terms of texture and grain size. The [Unified Soil Classification System](https://en.wikipedia.org/wiki/Unified_Soil_Classification_System) (USCS) does this using a two-letter system.
 
 
 |    FIRST LETTER (grain size,   decreasing) | SECOND LETTER (texture)                                        |
@@ -21,7 +25,7 @@ When texture is added, we have another layer of detail. For instance, sand-sized
 
 As a final note, we can have borderline or hybrid classifications due to the behavior of particles at different sizes or crossovers between different grain sizes that have similar behavior. Silts tend to exhibit lower plasticity and clays exhibit higher ones, so calling a soil “SM-SL” (silty sand/sand of low plasticity) defines the same characteristic.
 
-Below we have a broader table from a [geotechnical data site](http://www.geotechdata.info/parameter/cohesion.html) based on USCS data with values for unsaturated, saturated, compacted, and saturated compacted soils. "chorizon" is a reference table in the Digital General Soil Map of the United States (STATSGO2) database and identifies the corresponding data attribute for the soil class.
+Below we have a broader table from a [geotechnical data site](http://www.geotechdata.info/parameter/cohesion.html) based on USCS data with values for unsaturated, saturated, compacted, and saturated compacted soils. "chorizon" is a reference table in the Digital General Soil Map of the United States (STATSGO2) database and identifies the corresponding data attribute for the soil class. Default values in the table are assumed to be "Unsaturated" unless otherwise specified.
 
 | Description                                                                                                                | USCS symbol              | chorizon                      | Unsaturated | Saturated | Compacted | Saturated Compacted |
 |----------------------------------------------------------------------------------------------------------------------------|--------------------------|-------------------------------|-------------|-----------|-----------|---------------------|
@@ -47,11 +51,11 @@ Below we have a broader table from a [geotechnical data site](http://www.geotech
 | Silty clay,   clay                                                                                                         | OL, CL, OH, CH           |                               | 4-25\*       | 20-Oct    | 90-105    |                     |
 | Peat and   other highly organic soils                                                                                      | Pt                       | om_r                          |             |           |           |                     |
 
-NOTES:
+**NOTES:**
 
 \* Hyphenated classifications are "borderline" and incorporate plasticity aspects of both types depending on percentage
 
-\*\* Loam is not classified in SSURGO metadata
+\*\* Loam is not classified in **S**oil **Sur**vey **G**e**o**graphic Database (SSURGO) metadata
 
 ## Update 2/17/20
 
