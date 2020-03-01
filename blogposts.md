@@ -59,10 +59,12 @@ The actual values for cohesion are measured on an integer scale starting from 0 
 
 \*\* Loam is not classified in Soil Survey Geographic Database (SSURGO) metadata
 
-###Filling in the Blanks
-One thing to consider when putting these values to use is that in landslide conditions, unsaturated soil is unlikely to be the default condition. We are much more likely to see saturated or saturated compacted soil due to rainfall and shear stress conditions. Given that many of the soil types have unspecified values for these conditions, it may be necessary to add some measure of uncertainty or error to these values when we incorporate them into our landslide susceptibility model.
+### Filling in the Blanks
+One thing to consider when putting these values to use is that in landslide conditions, unsaturated soil is unlikely to be the default condition. We are much more likely to see saturated or saturated compacted soil due to rainfall and shear stress conditions. Given that many of the soil types have unspecified values for these conditions, it will be necessary to add some measure of uncertainty or error to these values when we incorporate them into our landslide susceptibility model.
 
+In the actual data, we also see a significant number of hybridized classifications. Since the geotechnical soil database only has two instances of hybridization, it is difficult to discern an overall trend to fill in the blanks for saturated, compacted, and saturated compacted values. For instance, the SM-SC classification appears to line up better with SC than it does SM. However, saturated and saturated compacted values for ML-CL fall outside the range of both: lower than ML when compacted but higher than SL when saturated compacted.
 
+In short, there are too many missing spaces in this table for us to determine with a high precision what the value for cohesion will be in our model. Our results will largely depend on the type of soil in our area of interest, and how accurately we determine our potential error.
 
 ## Update 2/17/20
 
