@@ -27,6 +27,8 @@ As a final note, we can have borderline or hybrid classifications due to the beh
 
 Below we have a broader table from a [geotechnical data site](http://www.geotechdata.info/parameter/cohesion.html) based on USCS data with values for unsaturated, saturated, compacted, and saturated compacted soils. "chorizon" is a reference table in the Digital General Soil Map of the United States (STATSGO2) database and identifies the corresponding data attribute for the soil class. Default values in the table are assumed to be unsaturated unless otherwise specified. If a range was given for compenents of a hybrid soil type, the average or endpoints are used and specified with an asterisk (\*) in the table.
 
+The actual values for cohesion are measured on an integer scale starting from 0 indicating no cohesion. Coarse-grained soils such as gravels are unlikely to cohere and thus exhibit lower values, while fine-grained soils like clays are much more cohesive. Saturated soils are more likely to cohere than unsaturated soils; the same is generally true of compacted soils, with the apparent exception of soils with a higher silt content. Saturated compacted soils are generally less cohesive than unsaturated compacted soils, with the exception of silts with high plasticity.
+
 | Description                                                                                                                | USCS symbol              | chorizon                      | Unsaturated | Saturated | Compacted | Saturated Compacted |
 |----------------------------------------------------------------------------------------------------------------------------|--------------------------|-------------------------------|-------------|-----------|-----------|---------------------|
 | Well graded   gravel, sandy gravel, with little or no fines                                                                | GW                       | sieveno4_r                    | 0           |           |           |                     |
@@ -36,11 +38,11 @@ Below we have a broader table from a [geotechnical data site](http://www.geotech
 | Well graded   sands, gravelly sands, with little or no fines                                                               | SW                       | sandvc_r                      | 0           |           |           |                     |
 | Poorly graded   sands, gravelly sands, with little or no fines                                                             | SP                       | sandco_r                      | 0           |           |           |                     |
 | Silty sands                                                                                                                | SM                       | sandmed_r                     | 22          |           | 20        | 50                  |
-| Loamy sand,   sandy clay Loam                                                                                              | SM-SC                    | sandfine_r                    | 7\*          | 10-20\*    | 50-75     | 14                  |
+| Loamy sand,   sandy clay Loam                                                                                              | SM-SC                    | sandfine_r                    | 7\*          | 10-20     | 50-75     | 14                  |
 | Clayey sands                                                                                                               | SC                       | sandvf_r                      | 5           |           | 74        | 11                  |
 | Inorganic   silts, silty or clayey fine sands, with slight plasticity                                                      | ML                       | siltco_r                      | 7           |           | 67        | 9                   |
 | Inorganic   clays, silty clays, sandy clays of low plasticity                                                              | CL                       | claytotal_r                   | 4           |           | 86        | 13                  |
-| Mixture if   inorganic silt and clay, moderately plastic                                                                   | ML-CL                    | avg of siltco and   claytotal | 6\*          | 10-20\*    | 65        | 22                  |
+| Mixture if   inorganic silt and clay, moderately plastic                                                                   | ML-CL                    | avg of siltco and   claytotal | 6\*          |           | 65        | 22                  |
 | Organic silts   and organic silty clays of low plasticity                                                                  | OL                       | om_r fraction of silt         | 5           |           |           |                     |
 | Inorganic   silts of high plasticity                                                                                       | MH                       | siltfine_r                    | 20          |           | 10        | 72                  |
 | Inorganic   clays of high plasticity                                                                                       | CH                       | claysizedcarb_r               | 25          |           | 103       | 11                  |
@@ -57,7 +59,10 @@ Below we have a broader table from a [geotechnical data site](http://www.geotech
 
 \*\* Loam is not classified in Soil Survey Geographic Database (SSURGO) metadata
 
-One thing to consider when putting these values to use is that in landslide conditions, unsaturated soil is unlikely to be the default condition. We are much more likely to see saturated or saturated compacted soil due to rainfall and shear stress conditions. Given that many of the soil types have unspecified values for these conditions, it may be necessary to add some measure of uncertainty or error to these values when we incorporate them into our landlside susceptibility model.
+###Filling in the Blanks
+One thing to consider when putting these values to use is that in landslide conditions, unsaturated soil is unlikely to be the default condition. We are much more likely to see saturated or saturated compacted soil due to rainfall and shear stress conditions. Given that many of the soil types have unspecified values for these conditions, it may be necessary to add some measure of uncertainty or error to these values when we incorporate them into our landslide susceptibility model.
+
+
 
 ## Update 2/17/20
 
