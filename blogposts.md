@@ -28,10 +28,10 @@ navigation_weight: 2
 | Clay Loam,   Silty Clay Loam\*\*                                                                                             | ML, OL, CL, MH, OH,   CH |                               | 4-25\*       | 20-Oct    | 60-105    |                     |
 | Silty clay,   clay                                                                                                         | OL, CL, OH, CH           |                               | 4-25\*       | 20-Oct    | 90-105    |                     |
 | Peat and   other highly organic soils                                                                                      | Pt                       | om_r                          |             |           |           |                     |
-|                                                                                                                            |                          |                               |             |           |           |                     |
-| NOTES:                                                                                                                     |                          |                               |             |           |           |                     |
-| \* Hyphenated   classifications are "borderline" and incorporate plasticity aspects   of both types depending on percentage |                          |                               |             |           |           |                     |
-| \*\* Loam is not classified in SSURGO metadata                                                                               |                          |                               |             |           |           |                     |
+
+NOTES:
+\* Hyphenated classifications are "borderline" and incorporate plasticity aspects of both types depending on percentage
+\*\* Loam is not classified in SSURGO metadata
 
 ## Update 2/17/20
 
