@@ -31,6 +31,7 @@ navigation_weight: 2
 
 NOTES:
 \* Hyphenated classifications are "borderline" and incorporate plasticity aspects of both types depending on percentage
+
 \*\* Loam is not classified in SSURGO metadata
 
 ## Update 2/17/20
