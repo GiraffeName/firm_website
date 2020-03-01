@@ -11,7 +11,7 @@ navigation_weight: 2
 Of our values from the Iverson model, soil cohesion is one of the most unpredictable and difficult to quantify with GIS because it depends on ground-truth data and variable environmental conditions. Soil mechanics and kinematics have been extensively studied by geologists and engineers, and these behaviors vary depending on the compaction or saturation of the sediment. To understand these dynamics, it is important to first define the soil type in terms of texture and grain size. The [Unified Soil Classification System](https://en.wikipedia.org/wiki/Unified_Soil_Classification_System) (USCS) does this using a two-letter system.
 
 
-|    FIRST LETTER (grain size,   decreasing) | SECOND LETTER (texture)                                        |
+|    FIRST LETTER (grain size) | SECOND LETTER (texture)                                        |
 |--------------------------------------------|----------------------------------------------------------------|
 | G - gravel                                 | P - poorly graded (uniform particle size)                      |
 | S - sand                                   | W - well-graded (various particle sizes)                       |
@@ -40,10 +40,10 @@ The actual values for cohesion are measured on an integer scale starting from 0 
 | Silty sands                                                                                                                | SM                       | sandmed_r                     | 22          |           | 20        | 50                  |
 | Loamy sand,   sandy clay Loam                                                                                              | SM-SC                    | sandfine_r                    | 7\*          | 10-20     | 50-75     | 14                  |
 | Clayey sands                                                                                                               | SC                       | sandvf_r                      | 5           |           | 74        | 11                  |
-| Inorganic   silts, silty or clayey fine sands, with slight plasticity                                                      | ML                       | siltco_r                      | 7           |           | 67        | 9                   |
-| Inorganic   clays, silty clays, sandy clays of low plasticity                                                              | CL                       | claytotal_r                   | 4           |           | 86        | 13                  |
-| Mixture if   inorganic silt and clay, moderately plastic                                                                   | ML-CL                    | avg of siltco and   claytotal | 6\*          |           | 65        | 22                  |
-| Organic silts   and organic silty clays of low plasticity                                                                  | OL                       | om_r fraction of silt         | 5           |           |           |                     |
+| Inorganic silts, silty or clayey fine sands, with slight plasticity                                                      | ML                       | siltco_r                      | 7           |           | 67        | 9                   |
+| Inorganic clays, silty clays, sandy clays of low plasticity                                                              | CL                       | claytotal_r                   | 4           |           | 86        | 13                  |
+| Mixture if inorganic silt and clay, moderately plastic                                                                   | ML-CL                    | avg of siltco and   claytotal | 6\*          |           | 65        | 22                  |
+| Organic silts and organic silty clays of low plasticity                                                                  | OL                       | om_r fraction of silt         | 5           |           |           |                     |
 | Inorganic   silts of high plasticity                                                                                       | MH                       | siltfine_r                    | 20          |           | 10        | 72                  |
 | Inorganic   clays of high plasticity                                                                                       | CH                       | claysizedcarb_r               | 25          |           | 103       | 11                  |
 | Organic clays   of high plasticity                                                                                         | OH                       | om_r fraction of clay         | 10          |           |           |                     |
