@@ -7,13 +7,13 @@ navigation_weight: 2
 Of our values from the Iverson model, soil cohesion is one of the most variable and difficult to quantify with GIS data. Soil mechanics and kinematics have been extensively studied by geologists and engineers, and these behaviors vary depending on the compaction or saturation of the sediment. To understand these dynamics, it is important to first define the soil type in terms of texture and grain size. The Unified Soil Classification System (USCS) does this using a two-letter system.
 
 
-|    FIRST LETTER (grain size,   decreasing) | SECOND LETTER (texture)                                        |   |
-|--------------------------------------------|----------------------------------------------------------------|---|
-| G - gravel                                 | P - poorly graded (uniform particle size)                      |   |
-| S - sand                                   | W - well-graded (various particle sizes)                       |   |
-| M - silt                                   | H - high plasticity (greater ability to   permanently deform)  |   |
-| C - clay                                   | L - low plasticity (lesser ability to   permanently deform)    |   |
-| O - organic                                |                                                                |   |
+|    FIRST LETTER (grain size,   decreasing) | SECOND LETTER (texture)                                        |
+|--------------------------------------------|----------------------------------------------------------------|
+| G - gravel                                 | P - poorly graded (uniform particle size)                      |
+| S - sand                                   | W - well-graded (various particle sizes)                       |
+| M - silt                                   | H - high plasticity (greater ability to   permanently deform)  |
+| C - clay                                   | L - low plasticity (lesser ability to   permanently deform)    |
+| O - organic                                |                                                                |
 
 It is important to note that a classification can consist of two letters from this first column - for instance, “SM” delineates a silty sand. When this occurs, the second letter is always the more fine of the two. We will never have a “gravelly clay” for instance but rather a “clayey gravel.” When texture is added, we add another layer of detail. For instance, sand-sized particles that clump together when you squeeze them in your fist exhibit high plasticity and are therefore different from those that remain unconsolidated, despite being the same grain size. As a final note, we can have borderline or hybrid classifications due to the behavior of particles at different sizes or crossovers between different grain sizes that have similar behavior. Silts tend to exhibit lower plasticity and clays exhibit higher ones, so calling a soil “SM-SL” (silty sand/sand of low plasticity) defines the same characteristic.
 
