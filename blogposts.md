@@ -64,7 +64,8 @@ One thing to consider when putting these values to use is that in landslide cond
 
 In the actual data, we also see a significant number of hybridized classifications. Since the geotechnical soil database only has two instances of hybridization, it is difficult to discern an overall trend to fill in the blanks for saturated, compacted, and saturated compacted values. For instance, the SM-SC classification appears to line up better with SC than it does SM. However, saturated and saturated compacted values for ML-CL fall outside the range of both: lower than ML when compacted but higher than SL when saturated compacted.
 
-One possible source to correct this may be this graph from the [Federal Highway Administration Research and Technology](https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/15033/001.cfm) division of the U.S. Department of Transportation. 
+One possible source to correct this may be this graph from the [Federal Highway Administration Research and Technology](https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/15033/001.cfm) division of the U.S. Department of Transportation.
+![graph](https://github.com/GiraffeName/giraffename.github.io/blob/master/soilerosionrates.png)
 
 In short, there are too many missing spaces in this table for us to determine with a high precision what the value for cohesion will be in our model. Our results will largely depend on the type of soil in our area of interest, and how accurately we determine our potential error.
 
