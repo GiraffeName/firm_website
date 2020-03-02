@@ -32,29 +32,29 @@ The actual values for cohesion are measured on an integer scale starting from 0 
 | Description | USCS class | Cohesion |  |  |  | Soil Friction   Angle |  |
 |-----------------------------------------------------------------------|------------------------|-------------|-----------|-----------|---------------------|-----------------------|-----------|
 |  |  | Unsat | Sat | Comp | Sat Comp | Loose | Comp |
-| Well graded gravel, sandy gravel, with   little or no fines | GW | 0 |  |  |  | 33-40 |  |
-| Poorly graded gravel, sandy gravel, with   little or no fines | GP | 0 |  |  |  | 32-44 |  |
+| Well graded or sandy gravels | GW | 0 |  |  |  | 33-40 |  |
+| Poorly graded sandy gravels | GP | 0 |  |  |  | 32-44 |  |
 | Sandy gravels | GW-GP |  |  |  |  | 35 | 50 |
-| Silty gravels, silty sandy gravels | GM | 0 |  |  |  | 30-40 |  |
-| Clayey gravels, clayey sandy gravels | GC | 20 |  |  |  | 28-35 |  |
-| Well graded sands, gravelly sands, with   little or no fines | SW | 0 |  |  |  | 33-43 | 38-45 |
-| Poorly graded sands, gravelly sands, with   little or no fines | SP | 0 |  |  |  | 27-39 | 34-37 |
+| Silty/sandy gravels | GM | 0 |  |  |  | 30-40 |  |
+| Clayey/sandy gravels | GC | 20 |  |  |  | 28-35 |  |
+| Well graded gravelly sands | SW | 0 |  |  |  | 33-43 | 38-45 |
+| Poorly graded gravelly sands | SP | 0 |  |  |  | 27-39 | 34-37 |
 | Sand | SW-SP |  |  |  |  | 29-36 | 37-41 |
 | Silty sands | SM | 22 |  | 20 | 50 | 27-35 | 30-34 |
-| Loamy sand, sandy clay Loam | SC-SM | 7\* | 10-20 | 50-75 | 14 | 31-34 |  |
+| Loamy sand, sandy clay loam | SC-SM | 7\* | 10-20 | 50-75 | 14 | 31-34 |  |
 | Clayey sands | SC | 5 |  | 74 | 11 | 30-40 | 31 |
-| Inorganic silts, silty or clayey fine   sands, with slight plasticity | ML | 7 |  | 67 | 9 | 27-30 | 30-41 |
-| Inorganic clays, silty clays, sandy clays   of low plasticity | CL | 4 |  | 86 | 13 | 27-35 | 28 |
-| Mixture if inorganic silt and clay,   moderately plastic | CL-ML | 6\* |  | 65 | 22 |  |  |
-| Organic silts and organic silty clays of   low plasticity | OL | 5 |  |  |  | 22-32 |  |
-| Inorganic silts of high plasticity | MH | 20 |  | 10 | 72 | 23-33 | 25 |
-| Inorganic clays of high plasticity | CH | 25 |  | 103 | 11 | 17-31 | 19 |
-| Organic clays of high plasticity | OH | 10 |  |  |  | 17-35 |  |
+| Inorganic silts/clayey fine sands, slight plasticity | ML | 7 |  | 67 | 9 | 27-30 | 30-41 |
+| Inorganic clays/silty clays, low plasticity | CL | 4 |  | 86 | 13 | 27-35 | 28 |
+| Mixture of silt and clay, moderate plasticity | CL-ML | 6\* |  | 65 | 22 |  |  |
+| Organic silts/silty clays, low plasticity | OL | 5 |  |  |  | 22-32 |  |
+| Inorganic silts, high plasticity | MH | 20 |  | 10 | 72 | 23-33 | 25 |
+| Inorganic clays, high plasticity | CH | 25 |  | 103 | 11 | 17-31 | 19 |
+| Organic clays, high plasticity | OH | 10 |  |  |  | 17-35 |  |
 | Loam\*\* | ML, OL, MH, OH | 5-20\* | 10-20 | 60-90 |  | 28-32 |  |
-| Silt Loam\*\* | ML, OL, MH, OH | 5-20* | 10-21 | 60-90 |  | 25-32 |  |
-| Clay Loam, Silty Clay Loam\*\* | ML, OL, CL, MH, OH, CH | 4-25\* | 10-22 | 60-105 |  | 18-32 |  |
-| Silty clay, clay | OL, CL, OH, CH | 4-25\* | 10-23 | 90-105 |  | 18-32 |  |
-| Peat and other highly organic soils | Pt |  |  |  |  | 0-10 |  |
+| Silt loam\*\* | ML, OL, MH, OH | 5-20* | 10-21 | 60-90 |  | 25-32 |  |
+| Silty/clay loam\*\* | ML, OL, CL, MH, OH, CH | 4-25\* | 10-22 | 60-105 |  | 18-32 |  |
+| Silty clay | OL, CL, OH, CH | 4-25\* | 10-23 | 90-105 |  | 18-32 |  |
+| Peat, other highly organic soils | Pt |  |  |  |  | 0-10 |  |
 
 **NOTES:**
 
