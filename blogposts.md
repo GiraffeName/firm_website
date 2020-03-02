@@ -55,6 +55,7 @@ The actual values for cohesion are measured on an integer scale starting from 0 
 | Clay Loam, Silty Clay Loam\*\* | ML, OL, CL, MH, OH, CH | 4-25\* | 10-22 | 60-105 |  | 18-32 |  |
 | Silty clay, clay | OL, CL, OH, CH | 4-25\* | 10-23 | 90-105 |  | 18-32 |  |
 | Peat and other highly organic soils | Pt |  |  |  |  | 0-10 |  |
+
 **NOTES:**
 
 \* Hyphenated classifications are "borderline" and incorporate plasticity aspects of both types depending on percentage
