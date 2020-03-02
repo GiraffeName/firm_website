@@ -31,7 +31,7 @@ The actual values for cohesion are measured on an integer scale starting from 0 
 
 | Description | USCS class | Cohesion |  |  |  | Soil Friction   Angle |  |
 |-----------------------------------------------------------------------|------------------------|-------------|-----------|-----------|---------------------|-----------------------|-----------|
-|  |  | Unsaturated | Saturated | Compacted | Saturated Compacted | Loose | Compacted |
+|  |  | Unsat | Sat | Comp | Sat Comp | Loose | Comp |
 | Well graded gravel, sandy gravel, with   little or no fines | GW | 0 |  |  |  | 33-40 |  |
 | Poorly graded gravel, sandy gravel, with   little or no fines | GP | 0 |  |  |  | 32-44 |  |
 | Sandy gravels | GW-GP |  |  |  |  | 35 | 50 |
