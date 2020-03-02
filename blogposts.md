@@ -23,7 +23,7 @@ It is important to note that a classification can consist of two letters from th
 
 When texture is added, we have another layer of detail. For instance, sand-sized particles that clump together when you squeeze them in your fist exhibit high plasticity and are therefore different from those that remain unconsolidated, despite being the same grain size. 
 
-As a final note, we can have borderline or hybrid classifications due to the behavior of particles at different sizes or crossovers between different grain sizes that have similar behavior. Silts tend to exhibit lower plasticity and clays exhibit higher ones, so calling a soil “SM-SL” (silty sand/sand of low plasticity) defines the same characteristic.
+As a final note, we can have **borderline** or **hybrid** classifications due to the behavior of particles at different sizes or crossovers between different grain sizes that have similar behavior. Silts tend to exhibit lower plasticity and clays exhibit higher ones, so calling a soil “SM-SL” (silty sand/sand of low plasticity) defines the same characteristic.
 
 Below we have a broader table from a [geotechnical data site](http://www.geotechdata.info/parameter/cohesion.html) based on USCS data with values for unsaturated, saturated, compacted, and saturated compacted soils. "chorizon" is a reference table in the Digital General Soil Map of the United States (STATSGO2) database and identifies the corresponding data attribute for the soil class. Default values in the table are assumed to be unsaturated unless otherwise specified. If a range was given for compenents of a hybrid soil type, the average or endpoints are used and specified with an asterisk (\*) in the table.
 
