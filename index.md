@@ -22,4 +22,4 @@ We use GIS tools to conduct risk analyses for locations across space and time, b
 ### Contact
 Shoot us an email at <dukesofhazardsllc@gmail.com>.
 
-![image](https://github.com/GiraffeName/giraffename.github.io/blob/master/LunaPic-Edit-2.PNG)
+![image](LunaPic-Edit-2.PNG)
