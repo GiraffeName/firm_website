@@ -56,9 +56,9 @@ The actual values for cohesion are measured on an integer scale starting from 0 
 | Inorganic clays, high plasticity | CH | 25 |  | 103 | 11 | 17-31 | 19 |
 | Organic clays, high plasticity | OH | 10 |  |  |  | 17-35 |  |
 | Loam\*\* | ML, OL, MH, OH | 5-20\* | 10-20 | 60-90 |  | 28-32 |  |
-| Silt loam\*\* | ML, OL, MH, OH | 5-20* | 10-21 | 60-90 |  | 25-32 |  |
-| Silty/clay loam\*\* | ML, OL, CL, MH, OH, CH | 4-25\* | 10-22 | 60-105 |  | 18-32 |  |
-| Silty clay | OL, CL, OH, CH | 4-25\* | 10-23 | 90-105 |  | 18-32 |  |
+| Silt loam\*\* | ML, OL, MH, OH | 5-20* | 10-20 | 60-90 |  | 25-32 |  |
+| Silty/clay loam\*\* | ML, OL, CL, MH, OH, CH | 4-25\* | 10-20 | 60-105 |  | 18-32 |  |
+| Silty clay | OL, CL, OH, CH | 4-25\* | 10-20 | 90-105 |  | 18-32 |  |
 | Peat, other highly organic soils | Pt |  |  |  |  | 0-10 |  |
 
 **NOTES:**
@@ -68,7 +68,7 @@ The actual values for cohesion are measured on an integer scale starting from 0 
 \*\* Loam is not classified in Soil Survey Geographic Database (SSURGO) metadata
 
 ### Filling in the Blanks
-<a name="anchor2"></a>One thing to consider when putting these values to use is that in landslide conditions, unsaturated soil is unlikely to be the default condition. We are much more likely to see saturated or saturated compacted soil due to rainfall and shear stress conditions. Given that many of the soil types have unspecified values for these conditions, it will be necessary to add some measure of uncertainty or error to these values when we incorporate them into our landslide susceptibility model.
+<a name="anchor2"></a>You'll notice that there are a significant number of blank spaces in this table. To a certain degree, we'll have to estimate an exact value to put in our models. One thing to consider when putting these values to use is that in landslide conditions, unsaturated soil is unlikely to be the default condition. We are much more likely to see saturated or saturated compacted soil due to rainfall and shear stress conditions. Given that many of the soil types have unspecified values for these conditions, it will be necessary to add some measure of uncertainty or error to these values when we incorporate them into our landslide susceptibility model.
 
 In the actual data, we also see a significant number of hybridized classifications. Since the geotechnical soil database only has two instances of hybridization, it is difficult to discern an overall trend to fill in the blanks for saturated, compacted, and saturated compacted values. For instance, the SM-SC classification appears to line up better with SC than it does SM. However, saturated and saturated compacted values for ML-CL fall outside the range of both: lower than ML when compacted but higher than SL when saturated compacted.
 
