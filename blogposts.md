@@ -5,9 +5,14 @@ navigation_weight: 2
 ---
 # Blog Updates
 
++ [What's in a Landslide Susceptibility Model?](#link1)
++ [Python Can Help!](#link2)
++ [Looking at Landslide Density](#link3)
++ [Soil Cohesion and Angle of Friction](#link4)
+
 ## Update 3/1/20
 
-### Soil Cohesion
+### Soil Cohesion and Angle of Friction <a name='link4'></a>
 Of our values from the Iverson model, soil cohesion is one of the most unpredictable and difficult to quantify with GIS because it depends on ground-truth data and variable environmental conditions. Soil mechanics and kinematics have been extensively studied by geologists and engineers, and these behaviors vary depending on the compaction or saturation of the sediment. To understand these dynamics, it is important to first define the soil type in terms of texture and grain size. The [Unified Soil Classification System](https://en.wikipedia.org/wiki/Unified_Soil_Classification_System) (USCS) does this using a two-letter system.
 
 
@@ -27,7 +32,7 @@ We can also have **borderline** or **hybrid** classifications due to the behavio
 
 Below is a broader table from a [geotechnical data site](http://www.geotechdata.info/parameter/cohesion.html) based on USCS data with values for unsaturated, saturated, compacted, and saturated compacted soils. Default values in the table are assumed to be unsaturated unless otherwise specified. If a range was given for compenents of a hybrid soil type, the average or endpoints are used and specified with an asterisk.
 
-The actual values for cohesion are measured on an integer scale starting from 0 indicating no cohesion. Coarse-grained soils such as gravels are unlikely to cohere and thus exhibit lower values, while fine-grained soils like clays are much more cohesive. Saturated soils are more likely to cohere than unsaturated soils; the same is generally true of compacted soils, with the apparent exception of soils with a higher silt content. Saturated compacted soils appear to be generally less cohesive than unsaturated compacted soils, with the exception of silts with high plasticity. It should be noted that these generalizations are based on the limited amount of data we have here, which is discussed in greater detail [below](#anchor2).
+The actual values for cohesion are measured on an integer scale starting from 0 indicating no cohesion, in units of kilopascals (kPa). Coarse-grained soils such as gravels are unlikely to cohere and thus exhibit lower values, while fine-grained soils like clays are much more cohesive. Saturated soils are more likely to cohere than unsaturated soils; the same is generally true of compacted soils, with the apparent exception of soils with a higher silt content. Saturated compacted soils appear to be generally less cohesive than unsaturated compacted soils, with the exception of silts with high plasticity. It should be noted that these generalizations are based on the limited amount of data we have here, which is discussed in greater detail [below](#anchor2). Soil friction angle is the angle in degrees at which soil on a slope will shear.
 
 | Description | USCS class | Cohesion |  |  |  | Soil Friction   Angle |  |
 |-----------------------------------------------------------------------|------------------------|-------------|-----------|-----------|---------------------|-----------------------|-----------|
@@ -67,14 +72,14 @@ The actual values for cohesion are measured on an integer scale starting from 0 
 
 In the actual data, we also see a significant number of hybridized classifications. Since the geotechnical soil database only has two instances of hybridization, it is difficult to discern an overall trend to fill in the blanks for saturated, compacted, and saturated compacted values. For instance, the SM-SC classification appears to line up better with SC than it does SM. However, saturated and saturated compacted values for ML-CL fall outside the range of both: lower than ML when compacted but higher than SL when saturated compacted.
 
-A possible source to correct this may be this graph from the [Federal Highway Administration Research and Technology](https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/15033/001.cfm) division of the U.S. Department of Transportation. If we know shear stress (calculated from the driving factors listed [below](#anchor)) and the soil type, we can approximate the extent of erodibility.
+A possible source to correct this may be this graph from the [Federal Highway Administration Research and Technology](https://www.fhwa.dot.gov/publications/research/infrastructure/structures/bridge/15033/001.cfm) division of the U.S. Department of Transportation. If we know shear stress (calculated from the driving factors listed [below](#anchor)) and the soil type, we can approximate the extent of erodibility. However, this does not take soil saturation into account and is likely to be at best an incomplete solution.
 ![graph](soilerosionrates.png)
 
 Ultimately, there are too many missing spaces in this table for us to determine with a high precision what the value for cohesion will be in our model. Our results will largely depend on the type of soil in our area of interest, and how accurately we estimate our potential error.
 
 ## Update 2/17/20
 
-### Landslide Density
+### Landslide Density <a name='link3'></a>
 We've explored a number of different methods for calculating the greatest density of landslide occurrences in the USA. Based on a point/polygon combined dataset of recorded landslide occurrences across the United States. The two methods we settled on were as follows:
 
 The [Point to Raster](https://pro.arcgis.com/en/pro-app/tool-reference/conversion/point-to-raster.htm) tool allows a raster to be created from a point dataset. The tool works by creating a raster over the area containing the points. Each raster cell's value is computed using a combination of values from every point that lies within the cell. In our case, we simply had the raster store the number of points present in each cell. Each point in the dataset represents a landslide and all landslides were weighted equally.
@@ -89,7 +94,7 @@ Finally, not all landslides are the same-- some are of much greater magnitude th
 
 
 
-### Python
+### Python <a name='link2'></a>
 Python is a versatile and flexible programming language that is relatively easy to learn and can be used in conjunction with ArcGIS and QGIS. In this class, we will be using it for geoprocessing operations.
 
 The basic concepts of a programming language are pretty simple! A program is a set of instructions that a computer will carry out. Due to the nature of Newtonian physics, a computer will always follow the instructions in the same way every time, meaning the results you get are always going to be deterministic. You'll only get something different out if you put something different in. 
@@ -111,6 +116,8 @@ This prints whatever number is between the parentheses, plus 5. For example, `b(
 Python gives users the option of object-oriented programming, which is useful in creating a program with many different components that have their own attributes and can do things on their own inherent to themselves. Object-oriented programming is vital for GIS applications and will be covered in a future blog post.
 
 ## Update 2/10/20
+
+### Landslide Susceptibility Model Components <a name='link1'></a>
 Landslides are a combined problem of Newtonian physics and material properties. Different soils behave in predictable manners according to their textures, moisture content, and internal stresses. Knowing how soils behave under certain conditions will allow us to predict the risk of landslides for an area given data about that area. 
 We are calculating landslide risk according to a model put forth by [Iverson et al. 2000](https://doi.org/10.1029/2000WR900090).
 
