@@ -5,10 +5,10 @@ navigation_weight: 2
 ---
 # Blog Updates
 
-+ [What's in a Landslide Susceptibility Model?](#link1)
-+ [Python Can Help!](#link2)
-+ [Looking at Landslide Density](#link3)
-+ [Soil Cohesion and Angle of Friction](#link4)
++ [February 10: What's in a Landslide Susceptibility Model?](#link1)
++ [February 17: Python Can Help!](#link2)
++ [February 17: Looking at Landslide Density](#link3)
++ [March 1: Soil Cohesion and Angle of Friction](#link4)
 
 ## Update 3/1/20
 
