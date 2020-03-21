@@ -5,12 +5,31 @@ navigation_weight: 2
 ---
 # Blog Updates
 
-
++ [March 21: Literature Review](#link6)
 + [March 14: ArcPy and the Critical Rainfall Threshold Model: A How-To Guide](#link5)
 + [March 1: Soil Cohesion and Angle of Friction](#link4)
 + [February 17: Looking at Landslide Density](#link3)
 + [February 17: Python Can Help!](#link2)
 + [February 10: What's in a Landslide Susceptibility Model?](#link1)
+
+## Update 3/21/20 <a name='link6'></a>
+
+### [Literature Review: GIS-based regional landslide susceptibility mapping:a case study in southern California.](https://onlinelibrary.wiley.com/doi/pdf/10.1002/esp.1562?casa_token=65iCytODknQAAAAA:cCriDQMrF3j58KpxL0aVNE-un_89VxPd30pBIWe1USHuM8qB1aiNZHisX99_ZfEk_h4BIpEi9CcJCQk)
+
+This article on landslide susceptibility analysis is pretty interesting. The authors, Yiping He and R. Edward Beighley, used an index-based approach and gathered together a bunch of data, combined it together in different ways, and decided which model would work best for their index. Their study area consisted of 3 areas of southern California: the South Coast, Transverse Ranges, and Peninsular Ranges. Over half of California's population lives in this area. This location is particularly susceptible to landslides due to its location on an active tectonic zone (the divide between the North American and Pacific Plates). It also has high relief, steep slopes, and widely varying climates in different areas.
+
+The authors entered into their study with the knowledge that landslides are triggered by intense rainfall and are affected by earthquakes, deforestation, and weathering. For their data, they consolidated and digitized a landslide inventory for their region from a variety of different maps of areas contained by their larger area. This was used to determine susceptibility values for the various factors that they selected.
+
+The biggest factor in their model was precipitation, which was measured using a combination of several factors: amount of rain in a 2-year, 6-hour storm, elevation, aspect (the direction a slope faces), and distance to the coastline. The first first came from NOAA atlases, and the latter 3 came from DEMs. More intense rainfall weakens the cohesion, so more intense rain was weighted more heavily. The other factors give insight into the flowing water's path downslope.
+
+Slope itself was weighted the heaviest in the study. Steep slopes mean it's more likely that gravity will be stronger than the friction that holds soils together, so they generally correlate with high landslide risk. They also investigated how curvature (a measure of how convex/concave a surface is) affects landslides, and found that both convex and concave surfaces both make landslides more likely, because they hold more water. Surfaces that were neither convex nor concave (i.e. roughly planar) were weighted lower than convex and concave surfaces.
+
+They used a land cover raster to figure out how urbanization affected landslides. Generally, urbanization includes removing plants. Plants help to hold the soil together, which means that urbanization makes landslides more likely to occur. Similarly, they used proximity to roads to see how impermeable surfaces and drainage lines affected landslides.
+
+They put everything together by using some complex and fancy equations, which you can refer to the paper for. Basically, they had datasets for each of their factors, which they assigned landslide susceptibility ratings to using equations that correlated previous landslides (from their landslide inventory) with the different data classes. So, for example, their landslide inventory included data on lots of landslides that occurred over steep slopes, so their equation assigned a high susceptibility value to steep slopes. They used this method to turn each of their rasters into new, fancy, *susceptibility rasters* that told them how much each factor contributed to the landslide susceptibility of the area. Then they added 'em all together and classified them into 5 different hazard levels! Kinda reminds you of Intro. Here's their final map:
+
+
+![landslide susceptibility map for southern cal based on 7 factors](california-susceptibility.png)
 
 ## Update 3/14/20 <a name='link5'></a>
 
